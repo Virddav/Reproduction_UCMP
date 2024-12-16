@@ -10,7 +10,7 @@ with open('loading/config.pickle', "rb") as file:
 folder_name, file_names, labels = config["folder_name"], config["file_names"], config["labels"]
 colors, markers = config["colors"], config["markers"]
 
-fig, ax = plt.subplots(nrows=1)
+fig, ax = plt.subplots(nrows=1, figsize=(10,6))
 legends = []
 for i in range(len(file_names)):
     flows = defaultdict(list)
@@ -63,7 +63,7 @@ ax.set_xlabel("Flow size (Bytes)", fontsize=26)
 ax.tick_params(axis='x', labelsize=24)
 ax.tick_params(axis='y', labelsize=24)
 
-ax.legend(handles=legends, loc='upper left', fontsize=24, frameon=False)
+ax.legend(handles=legends, loc='upper center',ncol=2,bbox_to_anchor=(1, 0.5), fontsize=24, frameon=False)
 
 plt.grid(ls='--')
 plt.savefig(f'./figures/FCT.{config["suffix"]}', bbox_inches='tight')
