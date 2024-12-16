@@ -1,0 +1,2 @@
+/home/dbrillau/UCMP/run/Figure6ac_and7/BE_BAR.py:37: UserWarning: FixedFormatter should only be used together with FixedLocator
+  ax.set_xticklabels(species)
