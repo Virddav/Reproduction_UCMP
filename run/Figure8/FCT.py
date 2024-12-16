@@ -63,7 +63,7 @@ ax.set_xlabel("Flow size (Bytes)", fontsize=26)
 ax.tick_params(axis='x', labelsize=24)
 ax.tick_params(axis='y', labelsize=24)
 
-ax.legend(handles=legends, loc='upper center',ncol=2,bbox_to_anchor=(1, 0.5), fontsize=24, frameon=False)
+ax.legend(handles=legends, loc='upper center',ncol=2,bbox_to_anchor=(0.5, 1.15), fontsize=24, frameon=False)
 
 plt.grid(ls='--')
 plt.savefig(f'./figures/FCT.{config["suffix"]}', bbox_inches='tight')
