@@ -10,7 +10,7 @@ with open('loading/config.pickle', "rb") as file:
 folder_name, file_names, labels = config["folder_name"], config["file_names"], config["labels"]
 colors, markers = config["colors"], config["markers"]
 
-fig, ax = plt.subplots(nrows=1,figsize=(6,10))
+fig, ax = plt.subplots(nrows=1,figsize=(10,6))
 legends = []
 for i in range(len(file_names)):
     flows = defaultdict(list)
