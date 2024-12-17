@@ -67,7 +67,7 @@ for i in range(len(file_names)):
         set_tor_tor_util.append(tor_tor_util)
 
 for ftype in [1, 2, 3, 4]:  
-    fig, ax = plt.subplots()
+    fig, ax = plt.subplots(figsize=(10,6))
     legends = []
     
     for i in range(len(file_names)):
@@ -121,7 +121,7 @@ for ftype in [1, 2, 3, 4]:
     ax.tick_params(axis='x', labelsize=24)
     ax.tick_params(axis='y', labelsize=24)
 
-    plt.legend(handles=legends, loc='best', fontsize=24, frameon=False)
+    plt.legend(handles=legends, loc='upper center',bbox_to_anchor=(0.5, 1.15), ncol=3, fontsize=24, frameon=False)
 
     plt.grid(ls='--')
 
